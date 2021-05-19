@@ -1,0 +1,113 @@
+NAME:VIRUSTI2
+OUT:B
+CHANNEL:0
+
+0:Bank
+1:ModWheel
+2:Breath
+3:Ctrl 3
+4:FootCtrl
+5:Porta
+6:Data
+7:Volume
+8:Balance
+9:Ctrl 9
+10:Panorama
+11:Express
+12:Ctrl 12
+13:Ctrl 13
+14:Ctrl 14
+15:Ctrl 15
+16:Ctrl 16
+17:O1 Shape
+18:O1 PW
+19:O1 Wave
+20:O1 Semi
+21:O1 KeyF
+22:O2 Shape
+23:O2 PW
+24:O2 Wave
+25:O2 Semi
+26:O2 Detun
+27:FM Amt
+28:Osc Sync
+29:FE Ptch
+30:FE FM
+31:O2 KeyF
+33:Osc Bal
+34:Sub Vol
+35:Sub Shpe
+36:Osc Vol
+37:NoiseVol
+39:NoiseClr
+40:Cutoff 1
+41:Cutoff 2
+42:Res 1
+43:Res 2
+44:F1 EvAmt
+45:F2 EvAmt
+46:F1 KeyF
+47:F2 KeyF
+48:Fltr Bal
+49:Sat Type
+50:Ring Mod
+51:F1 Mode
+52:F2 Mode
+53:F Route
+54:F Attack
+55:F Decay
+56:F Sust
+57:F Slope
+58:F Rel
+59:A Attack
+60:A Decay
+61:A Sust
+62:A Slope
+63:A Rel
+64:Hold Pdl
+65:Port Pdl
+66:Sost Pdl
+67:LO1 Rate
+68:LO1 Shpe
+69:LO1 EnvM
+70:LO1 Mode
+71:LO1 Cntr
+72:LO1 KeyF
+73:LO1 Trig
+74:LO1 Ptc1
+75:LO1 Ptc2
+76:LO1 PW
+77:LO1 Res
+78:LO1 FGn
+79:LO2 Rate
+80:LO2 Shpe
+81:LO2 EnvM
+82:LO2 Mode
+83:LO2 Cntr
+84:LO2 KeyF
+85:LO2 Trig
+86:LO2 Shp
+87:LO2 FM
+88:LO2 F1
+89:LO2 F2
+90:LO2 Pan
+91:PatchVol
+93:Transpse
+94:Key Mode
+103:Chr Type
+104:Chr Mix1
+105:Chr Mix2
+106:Chr Rate
+107:Chr Dph
+108:Chr Dly
+109:Chr Fdbk
+110:Chr LWav
+111:Chr XOvr
+112:Dly Mode
+113:Dly Send
+114:Dly Time
+115:Dly Fdbk
+116:Dly LRte
+117:Dly LDph
+118:Dly LWav
+119:Dly Clr
