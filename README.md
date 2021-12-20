@@ -9,6 +9,7 @@ The setup consists of several devices including:
 * [Access Virus TI2](https://www.virus.info/virusti/overview) Digital Synthesizer
 * [Moog Subsequent 37](https://www.moogmusic.com/products/subsequent-37) Analog Synthesizer 
 * [Behringer TD-3](https://www.behringer.com/product.html?modelCode=P0DTD) Analog Bass Line Synthesizer
+* [Apple iPad Pro M1](https://www.apple.com/ipad-pro/) Tablet computer
 
 ## MIDI
 
