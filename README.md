@@ -19,3 +19,28 @@ The MIDI routing schema can be found in the [midi-chart.txt](https://github.com/
 
 Squarp Pyramid supports [definition files](https://squarp.net/pyramid/manual/definitionfiles/) for quickly mapping and accessing to the connected devices. The definition files related to the current setup can be found under [pyramid-definition-files](https://github.com/o/studio-setup/tree/master/pyramid-definition-files) folder.
 
+## Notes
+
+In the Squarp Pyramid Midi Out settings:
+
+	MIDI A MODE: MIDI OUT
+	MIDI A SYNC: SEND
+	MIDI B MODE: MIDI OUT
+	MIDI B SYNC: SEND
+
+In the Digitakt Midi Config:
+
+	CLOCK SEND: ENABLED
+	TRANSPORT SEND: ENABLED
+
+In the Digitakt Channels Config:
+
+	TRACK A CHANNEL: 9
+	TRACK B CHANNEL: 10
+	FX CONTROL CHANNEL: OFF
+	AUTO CHANNEL: OFF
+
+In the main screen: 
+
+* Switch to track 9 and enable CHAN, choose 9
+* Switch to track 10 and enable CHAN, choose 10
