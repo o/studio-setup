@@ -15,8 +15,8 @@
 ┌─────┴────┴──────────┐         ┌───────────────────────────────────┐    ┌─────────────────────┐
 │   CH 10 CH 9        │         │                                   │    │                     │
 │                     │         │                                   │    │                     │
-│    ELEKTRON         │         │    ACCESS                         │    │    APPLE            │
-│    DIGITAKT         │         │    VIRUS TI2                      │    │    IPAD PRO M1      │
+│    MPC ONE          │         │    ACCESS                         │    │    APPLE            │
+│                     │         │    VIRUS TI2                      │    │    IPAD PRO M1      │
 │                     │         │                                   │    │                     │
 │                     │         │                                   │    │                     │
 │    OMNI, 1-16 CH    │         │    OMNI, 1-16 CH                  │    │    OMNI, 1-16 CH    │
