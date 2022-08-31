@@ -1,19 +1,58 @@
 ## Studio setup
 
-I am using this repository as online documentation of my DAW-less (no-computer) setup.
+I am using this repository as an online documentation of my DAW-less (no-computer) setup.
 
 The setup consists of several devices including:
 
 * [Squarp Pyramid MK3](https://squarp.net/pyramid/) Main sequencer and clock source
-* [Akai Pro MPC One](https://www.akaipro.com/mpc-one) Sampler / Sequencer 
-* [Access Virus TI2](https://www.virus.info/virusti/overview) Digital Synthesizer
-* [Moog Subsequent 37](https://www.moogmusic.com/products/subsequent-37) Analog Synthesizer 
+* [Akai Pro MPC One](https://www.akaipro.com/mpc-one) Sampler and Sequencer
+* [Access Virus TI2](https://www.virus.info/virusti/overview) VA Polyphonic Digital Synthesizer
+* [Moog Subsequent 37](https://www.moogmusic.com/products/subsequent-37) Paraphonic Analog Synthesizer 
 * [Behringer TD-3](https://www.behringer.com/product.html?modelCode=P0DTD) Analog Bass Line Synthesizer
-* [Apple iPad Pro M1](https://www.apple.com/ipad-pro/) Tablet computer
+* [Roland SPX-SX](https://www.roland.com/global/products/spd-sx/) Sampling Pad
+* [Apple iPad Pro M1](https://www.apple.com/ipad-pro/) Tablet computer used for step sequencing
+* [Arturia KeyStep](https://www.arturia.com/keystep/overview) MIDI keyboard with step sequencing
+* [Arturia KeyLab 61](https://www.arturia.com/products/hybrid-synths/keylab61/overview) MIDI keyboard
 
-## MIDI
+## MIDI Scheme
 
-The MIDI routing schema can be found in the [midi-chart.txt](https://github.com/o/studio-setup/blob/master/midi-chart.txt) file.
+                  ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+                  │                                                                                                    │
+                  │    ┌────────────────────────────────────────────────────┐                                          │
+                  │    │                                                    │                                          │
+                  │    ▼                                                    │                                          ▼
+        ┌─────────┴─────────────────┐      ┌──────────────────────┐      ┌──┴──────────────┐      ┌────────────────────────────────────────────┐      ┌────────────────────┐      ┌────────────────────────────────┐
+        │       THRU  IN 1-16       │      │                      │      │  B              │      │                  IN 15               OUT 16├─────►│IN 16               │      │                                │
+        │                           │      │               IN 1-16├──────┤A                │      │                                            │      │                    │      │                                │
+        │  Access Virus TI 2        │      │  Akai MPC One        │      │  Squarp Pyramid │      │  Moog Subsequent 37                        │      │  Behringer TD-3    │      │  Roland SPX-SX                 │
+        │  16 CH                    │      │  128 CH              │      │  64 CH          │      │  1 CH                                      │      │  1 CH              │      │  1 CH                          │
+        │                           │      │                      │      │                 │      │                                            │      └────────────────────┘      │                                │
+        │                           │      │                      │      │                 │      │                                            │                                  │                                │
+        └───────────────────────────┘      │                      │      │                 │      │                                            │                                  │                                │
+                                           │                      │      │USB IN      IN   │      │                                            │                                  │                                │
+                                           │                      │      └─────────────────┘      │                                            │                                  │                                │
+                                           │                      │         ▲          ▲          │                                            │                                  │                                │
+                                           │                      │         │          │          │                                            │                                  │                                │
+                                           └──────────────────────┘         │          │          └────────────────────────────────────────────┘                                  │                                │
+                                                                            │          │                                                                                          │                                │
+                                                                            │          │                                                                                          │                                │
+                                                                            │          │                                                                                          │                                │
+                                                                            │          │                                                                                          └────────────────────────────────┘
+                                                                            │          │
+                                                       ┌────────────────────┴─┐      ┌─┴─────────────────────────────────────────┐
+                                                       │               USB OUT│      │OUT                                        │
+                                                       │                      │      │                                           │
+                                                       │  iPad Pro M1         │      │  Arturia Keystep                          │
+                                                       │                      │      │                                           │
+                                                       │                      │      │                                           │  ┌──────────────────────────────────────────────────────────────────────────────┐
+                                                       │                      │      └───────────────────────────────────────────┘  │                                                                              │
+                                                       │                      │                                                     │                                                                              │
+                                                       │                      │                                                     │  Arturia Keylab 61                                                           │
+                                                       │                      │                                                     │                                                                              │
+                                                       │                      │                                                     │                                                                              │
+                                                       │                      │                                                     │                                                                              │
+                                                       └──────────────────────┘                                                     └──────────────────────────────────────────────────────────────────────────────┘
+
 
 ## Squarp Pyramid Definition files
 
