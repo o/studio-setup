@@ -22,7 +22,7 @@ The setup consists of several devices including:
                   │    │                                                    │                                          │
                   │    ▼                                                    │                                          ▼
         ┌─────────┴─────────────────┐      ┌──────────────────────┐      ┌──┴──────────────┐      ┌────────────────────────────────────────────┐      ┌────────────────────┐      ┌────────────────────────────────┐
-        │       THRU  IN 1-16       │      │                      │      │  B              │      │                  IN 15               OUT 16├─────►│IN 16               │      │                                │
+        │       THRU  IN 1-16       │      │                      │      │  B              │      │                  IN 15               OUT 16├─────►│IN 16               ├─────►│ IN 14                          │
         │                           │      │               IN 1-16├──────┤A                │      │                                            │      │                    │      │                                │
         │  Access Virus TI 2        │      │  Akai MPC One        │      │  Squarp Pyramid │      │  Moog Subsequent 37                        │      │  Behringer TD-3    │      │  Roland SPX-SX                 │
         │  16 CH                    │      │  128 CH              │      │  64 CH          │      │  1 CH                                      │      │  1 CH              │      │  1 CH                          │
