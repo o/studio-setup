@@ -7,6 +7,7 @@ The setup consists of several devices including:
 * [Squarp Pyramid MK3](https://squarp.net/pyramid/) Main sequencer and clock source
 * [Akai Pro MPC One](https://www.akaipro.com/mpc-one) Sampler and Sequencer
 * [Access Virus TI2](https://www.virus.info/virusti/overview) VA Polyphonic Digital Synthesizer
+* [Access Virus TI Polar](https://www.virus.info/virusti/overview) VA Polyphonic Digital Synthesizer
 * [Moog Subsequent 37](https://www.moogmusic.com/products/subsequent-37) Paraphonic Analog Synthesizer 
 * [Behringer TD-3](https://www.behringer.com/product.html?modelCode=P0DTD) Analog Bass Line Synthesizer
 * [Roland SPX-SX](https://www.roland.com/global/products/spd-sx/) Sampling Pad
@@ -26,8 +27,8 @@ The setup consists of several devices including:
         │                           │      │               IN 1-16├──────┤A                │      │                                            │      │                    │      │                                │
         │  Access Virus TI 2        │      │  Akai MPC One        │      │  Squarp Pyramid │      │  Moog Subsequent 37                        │      │  Behringer TD-3    │      │  Roland SPX-SX                 │
         │  16 CH                    │      │  128 CH              │      │  64 CH          │      │  1 CH                                      │      │  1 CH              │      │  1 CH                          │
-        │                           │      │                      │      │                 │      │                                            │      └────────────────────┘      │                                │
-        │                           │      │                      │      │                 │      │                                            │                                  │                                │
+        │  Access Virus TI Polar    │      │                      │      │                 │      │                                            │      └────────────────────┘      │                                │
+        │  16 CH                    │      │                      │      │                 │      │                                            │                                  │                                │
         └───────────────────────────┘      │                      │      │                 │      │                                            │                                  │                                │
                                            │                      │      │USB IN      IN   │      │                                            │                                  │                                │
                                            │                      │      └─────────────────┘      │                                            │                                  │                                │
@@ -44,9 +45,9 @@ The setup consists of several devices including:
                                                        │                      │      │                                           │
                                                        │  iPad Pro M1         │      │  Arturia Keystep                          │
                                                        │                      │      │                                           │
-                                                       │                      │      │                                           │  ┌──────────────────────────────────────────────────────────────────────────────┐
-                                                       │                      │      └───────────────────────────────────────────┘  │                                                                              │
-                                                       │                      │                                                     │                                                                              │
+                                                       │                      │      │                                     IN    │  ┌──────────────────────────────────────────────────────────────────────────────┐
+                                                       │                      │      └──────────────────────────────────────▲────┘  │                                                                              │
+                                                       │                      │                                             └───────│  OUT                                                                         │
                                                        │                      │                                                     │  Arturia Keylab 61                                                           │
                                                        │                      │                                                     │                                                                              │
                                                        │                      │                                                     │                                                                              │
