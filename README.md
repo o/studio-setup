@@ -4,7 +4,8 @@ I am using this repository as an online documentation of my DAW-less (no-compute
 
 The setup consists of several devices including:
 
-* [Squarp Pyramid MK3](https://squarp.net/pyramid/) Main sequencer and clock source
+* [Squarp Hapax](https://squarp.net/hapax/) Main sequencer and clock source
+* [Squarp Pyramid MK3](https://squarp.net/pyramid/) MIDI Sequencer
 * [Akai Pro MPC One](https://www.akaipro.com/mpc-one) Sampler and Sequencer
 * [Access Virus TI2](https://www.virus.info/virusti/overview) VA Polyphonic Digital Synthesizer
 * [Access Virus TI Polar](https://www.virus.info/virusti/overview) VA Polyphonic Digital Synthesizer
@@ -14,59 +15,68 @@ The setup consists of several devices including:
 * [Apple iPad Pro M1](https://www.apple.com/ipad-pro/) Tablet computer used for step sequencing
 * [Arturia KeyStep](https://www.arturia.com/keystep/overview) MIDI keyboard with step sequencing
 * [Arturia KeyLab 61](https://www.arturia.com/products/hybrid-synths/keylab61/overview) MIDI keyboard
+* [Tascam Model 12](https://www.tascam.eu/en/model12) Mixer with MIDI transport and multitrack recording
 
 ## MIDI Scheme
 
-                  ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-                  │                                                                                                    │
-                  │    ┌────────────────────────────────────────────────────┐                                          │
-                  │    │                                                    │                                          │
-                  │    ▼                                                    │                                          ▼
-        ┌─────────┴─────────────────┐      ┌──────────────────────┐      ┌──┴──────────────┐      ┌────────────────────────────────────────────┐      ┌────────────────────┐      ┌────────────────────────────────┐
-        │       THRU  IN 1-16       │      │                      │      │  B              │      │                  IN 15               OUT 16├─────►│IN 16               ├─────►│ IN 14                          │
-        │                           │      │               IN 1-16├──────┤A                │      │                                            │      │                    │      │                                │
-        │  Access Virus TI 2        │      │  Akai MPC One        │      │  Squarp Pyramid │      │  Moog Subsequent 37                        │      │  Behringer TD-3    │      │  Roland SPX-SX                 │
-        │  16 CH                    │      │  128 CH              │      │  64 CH          │      │  1 CH                                      │      │  1 CH              │      │  1 CH                          │
-        │  Access Virus TI Polar    │      │                      │      │                 │      │                                            │      └────────────────────┘      │                                │
-        │  16 CH                    │      │                      │      │                 │      │                                            │                                  │                                │
-        └───────────────────────────┘      │                      │      │                 │      │                                            │                                  │                                │
-                                           │                      │      │USB IN      IN   │      │                                            │                                  │                                │
-                                           │                      │      └─────────────────┘      │                                            │                                  │                                │
-                                           │                      │         ▲          ▲          │                                            │                                  │                                │
-                                           │                      │         │          │          │                                            │                                  │                                │
-                                           └──────────────────────┘         │          │          └────────────────────────────────────────────┘                                  │                                │
-                                                                            │          │                                                                                          │                                │
-                                                                            │          │                                                                                          │                                │
-                                                                            │          │                                                                                          │                                │
-                                                                            │          │                                                                                          └────────────────────────────────┘
-                                                                            │          │
-                                                       ┌────────────────────┴─┐      ┌─┴─────────────────────────────────────────┐
-                                                       │               USB OUT│      │OUT                                        │
-                                                       │                      │      │                                           │
-                                                       │  iPad Pro M1         │      │  Arturia Keystep                          │
-                                                       │                      │      │                                           │
-                                                       │                      │      │                                     IN    │  ┌──────────────────────────────────────────────────────────────────────────────┐
-                                                       │                      │      └──────────────────────────────────────▲────┘  │                                                                              │
-                                                       │                      │                                             └───────│  OUT                                                                         │
-                                                       │                      │                                                     │  Arturia Keylab 61                                                           │
-                                                       │                      │                                                     │                                                                              │
-                                                       │                      │                                                     │                                                                              │
-                                                       │                      │                                                     │                                                                              │
-                                                       └──────────────────────┘                                                     └──────────────────────────────────────────────────────────────────────────────┘
 
+
+        ┌───────────────────────────────────────────────────────────────────┐                                                                                  
+        │                                                                   │                                                                                  
+        │                                                                   │                                               ┌─────────────────┐                
+        │                                                                   │      ┌─────────────────────────────────┐      │                 │                
+        │        Arturia Keylab 61                                          │      │                                 │      │                 │                
+        │                                                                   │      │                                 │      │   Squarp        │                
+        │                                                                   ┼─────►│    Arturia Keystep              ┼─────►│   Pyramid       │                
+        │                                                                   │      │                                 │      │                 │                
+        └───────────────────────────────────────────────────────────────────┘      └─────────────────────────────────┘      └────┬────────────┘                
+                                                                                                                                 │                             
+                                                                                                                                 │                             
+                                                                                                                                 │                             
+                                                                                                                                 │                             
+                                                                                                                                 │                             
+                                                           ┌────────────────────────────────────┐                                │                             
+                                                           │                                    │                                │                             
+                                                           │                                    │◄───────────────────────────────┘                             
+                                                           │                                    │                                                              
+                                                           │     Squarp Hapax                   │                                                              
+                                                           │                                    │                                                              
+                                                           │                                    ┼────────────────────────────────────┐                         
+                                                           │                                    ┼──────┐                             │                         
+                                                           └─┬─┬────────────────────────────────┘      │                             │                         
+                                                             │ │                                       │                             │                         
+                                                             │ │                                       │                             │                         
+                                                             │ │                                       │                             │                         
+                                                             │ │                                       │                             │                         
+         ┌────────────────────────────────────┐              │ │                                       │                             │                         
+         │                                    │◄─────────────┘ │                                       │                             │                         
+         │                                    │                ▼                                       ▼                             │                         
+         │                                    │      ┌────────────────────────────────────────┐      ┌──────────────────────┐        │                         
+         │                                    │      │                                        │      │                      │        │                         
+         │                                    │      │                                        │      │                      │        ▼                         
+         │                                    │      │                                        │      │                      │      ┌──────────────────────────┐
+         │                                    │      │                                        │      │                      │      │                          │
+         │                                    │      │                                        │      │                      │      │                          │
+         │                                    │      │                                        │      │                      │      │                          │
+         │      Access Virus TI Polar         │      │      Moog Subsequent 37                │      │    Akai MPC One      │      │    Access Virus TI2      │
+         │                                    │      │                                        │      │                      │      │                          │
+         │                                    │      │                                        │      │                      │      │                          │
+         │                                    │      │                                        │      │                      │      │                          │
+         └────────────────────────────────────┘      └────────────────────────────────────────┘      └──────────────────────┘      └──────────────────────────┘
+
+TD3 and SPD-SX are not connected via MIDI. I might want to send MIDI from SPD-SX in the future for recording drums.
 
 ## Squarp Pyramid Definition files
 
-Squarp Pyramid supports [definition files](https://squarp.net/pyramid/manual/definitionfiles/) for quickly mapping and accessing the connected devices. The definition files related to the current setup can be found under [pyramid-definition-files](https://github.com/o/studio-setup/tree/master/pyramid-definition-files) folder.
+Squarp Pyramid and Hapax support definition files for quickly mapping and accessing connected devices. These files, related to the current setup, can be found in the respective folders. Since Hapax is used as a main sequencer, I’ll only be updating these definition files.
+
 
 ## Notes
 
-In the Squarp Pyramid Midi Out settings:
+In the Squarp Hapax (for all 4 MIDI Out ports) settings:
 
-	MIDI A MODE: MIDI OUT
-	MIDI A SYNC: SEND
-	MIDI B MODE: MIDI OUT
-	MIDI B SYNC: SEND
+	MIDI X MODE: MIDI OUT
+	MIDI X SYNC: SEND
 
 In the MPC ONE:
 
